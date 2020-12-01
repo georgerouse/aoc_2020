@@ -1,6 +1,6 @@
 if __name__ == '__main__':
     # Get the input data
-    with open('inputs/day_01_input.txt') as f:
+    with open('inputs/day_01.txt') as f:
         file_data = f.read()
     input_list = [int(x) for x in file_data.split('\n')]
 
