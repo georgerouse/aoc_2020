@@ -1,5 +1,4 @@
 from itertools import combinations
-from functools import reduce
 
 if __name__ == '__main__':
     # Get the input data
