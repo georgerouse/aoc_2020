@@ -5,21 +5,12 @@ FLOOR = '.'
 EMPTY_SEAT = 'L'
 OCCUPIED_SEAT = '#'
 
+
 def print_floor_map(floor_map):
     for row in floor_map:
         print(''.join(row))
 
-test = '''L.LL.LL.LL
-LLLLLLL.LL
-L.L.L..L..
-LLLL.LL.LL
-L.LL.LL.LL
-L.LLLLL.LL
-..L.L.....
-LLLLLLLLLL
-L.LLLLLL.L
-L.LLLLL.LL'''
-
+        
 def get_adjacent_seats_v1(x, y, floor_map):
     y_max_index = len(floor_map) - 1
     x_max_index = len(floor_map[0]) - 1
@@ -79,6 +70,7 @@ def get_adjacent_seats_v2(x, y, floor_map, debug=False):
 
     return seat_list
 
+
 def count_occupied_seats(floor_map):
     occupied_count = 0
     for y, row in enumerate(floor_map):
@@ -86,6 +78,7 @@ def count_occupied_seats(floor_map):
             if floor_map[y][x] == OCCUPIED_SEAT:
                 occupied_count += 1
     return occupied_count
+
 
 if __name__ == '__main__':
     # Get the input data
